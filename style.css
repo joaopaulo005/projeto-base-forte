@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background2.jpeg');
+    background-size: cover; /*preenche o fundo */
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    background-color: #193C94;
+    color: #fff;
+    padding: 0.5px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #384870;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #0073E6;
+    color: #2B3233;
+}
+
+.container {
+    max-width: 800px; /*responsividade */
+    margin: 0 auto; /*centraliza o conteúdo */
+    padding: 80px;
+    text-align: center; /*centraliza o texto */
+}
+
+footer {
+    background-color: #384870;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /*espaçamento */
+    max-width: 600px; /*largura do formulário */
+    margin: 0 auto; /* centraliza o formulário horizontalmente */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left; /*alinha os labels à esquerda */
+}
+
+form input, form select, form textarea {
+    width: 100%; /*faz os campos ocuparem toda a largura disponível */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%; /*botão ocupa toda a largura do formulário */
+    padding: 12px;
+    background-color: #0073E6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #005bb5; /*cor ao passar o mouse */
+}
+
+#numeros-inputs {
+    display: flex;
+    flex-wrap: wrap; /*permite reorganizar os inputs em telas menores */
+    gap: 10px; /*espaçamento entre os inputs */
+    justify-content: center; /*centraliza os inputs horizontalmente */
+}
+
+#numeros-inputs input {
+    flex: 1; /*ajusta o tamanho de cada input de forma proporcional */
+    min-width: 50px; /*tamanho mínimo */
+    max-width: 80px; /*tamanho máximo */
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006400;
+}
+
+/*ajuste de responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input, form select, form textarea, form button {
+        font-size: 14px; /*reduz tamanho para telas menores */
+    }
+
+    #numeros-inputs input {
+        max-width: 60px; /*reduz tamanho máximo dos inputs */
+    }
+}

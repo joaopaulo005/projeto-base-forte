@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Aquisição</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="favicon.png">
+</head>
+<body>
+    <header>
+        <h1>Base Forte</h1>
+        <p>Transformando jovens em atletas profissionais</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre a Empresa</a>
+        <a href="contato.html">Contato</a>
+        <a href="sorte.html">Jogo da Sorte</a>
+        <a href="aquisicao.html">Aquisição</a>
+    </nav>
+
+    <div class="container">
+    <h2>Solicitação de Serviço</h2>
+    <form id="form-aquisicao" action="processar_aquisicao.php" method="POST">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="servico">Selecione o serviço desejado:</label>
+        <select id="servico" name="servico" required>
+            <option value="" disabled selected>Escolha uma opção</option>
+            <option value="pacote_videos">Pacote de vídeos para treinamentos online</option>
+            <option value="treinamento_online">Treinamento pessoal online</option>
+            <option value="treinamento_presencial">Treinamento pessoal presencial</option>
+            <option value="escolinha">Treinamento em nossa escolinha</option>
+            <option value="intercambio">Treinamento para intercâmbio</option>
+        </select>
+
+        <button type="submit">Enviar Solicitação</button>
+    </form>
+</div>
+
+
+    <footer>
+        © 2024 Base Forte - Rio de Janeiro - Todos os direitos reservados.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Sorte - Futebol Futuro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <script defer src="sorte.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Base Forte</h1>
+        <p>Transformando jovens em atletas profissionais</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre a Empresa</a>
+        <a href="contato.html">Contato</a>
+        <a href="sorte.html">Jogo da Sorte</a>
+        <a href="aquisicao.html">Aquisição</a>
+    </nav>
+
+    <div class="container">
+        <h2>Escolha seu Serviço</h2>
+        <form id="servico-form">
+            <label for="servico">Selecione um serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="1">Pacote de vídeos para treinamentos online</option>
+                <option value="2">Treinamento pessoal online</option>
+                <option value="3">Treinamento pessoal presencial</option>
+                <option value="4">Treinamento em nossa escolinha</option>
+                <option value="5">Treinamento para intercâmbio</option>
+            </select>
+            <br>
+            <label for="valor">Faça seu orçamento! Quanto deseja pagar? (R$):</label>
+            <input type="number" id="valor" name="valor" min="0" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Jogue para Ganhar Descontos!</h2>
+        <form id="jogo-form">
+            <p>Escolha seis números (de 1 a 99):</p>
+            <div id="numeros-inputs">
+                <input type="number" min="1" max="99" required>
+                <input type="number" min="1" max="99" required>
+                <input type="number" min="1" max="99" required>
+                <input type="number" min="1" max="99" required>
+                <input type="number" min="1" max="99" required>
+                <input type="number" min="1" max="99" required>
+            </div>
+            <button type="button" id="verificar-btn">Verificar Sorte</button>
+        </form>
+
+        <h3 id="resultado"></h3>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Base Forte - Rio de Janeiro - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
